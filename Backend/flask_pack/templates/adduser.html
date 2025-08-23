@@ -1,0 +1,53 @@
+{%extends "adminpanel.html"%}
+{% block content %}
+    <div class="rightframe" style="height: auto; width: auto; border-style:groove; border-left: hidden;border-radius: 5px;">
+      <div class="head" style="width: 900px; height:  800px; background-color: aquamarine;border-style:groove; border-left: hidden;border-radius: 5px;">
+        <form   action="{{ url_for('signupauth')}}" method="post"   style="margin-top: 22%; margin-right: 20%;">
+          <div   class="card mb-3" style="max-width: 540px; margin-left: 30%;">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <div style="margin-left: 25%;" class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                          <input type="text" name="U_name"  class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div style="margin-left: 25%;" class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">	&#128273; </span>
+                          <input type="text"  name="P_word"  class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div style="margin-left: 25%;" class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"> </span>
+                          <input type="text"  name="designation"  class="form-control" placeholder="Designation" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div style="margin-left: 25%;" class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1" style="height: 40px;"> </span>
+                          <select style="width: 255px;" name="Department">
+                            <option value="GIS/CAD">GIS/CAD</option>
+                            <option value="Surveying">Surveying</option>
+                            <option value="Photogrammetry">Photogrammetry</option>
+                            <option value="LiDAR Services">LiDAR Services</option>
+                            <option value="Digital Twins">Digital Twins</option>
+                            <option value="BIM">BIM</option>
+                        </select>
+                        </div>
+                        <div style="margin-left: 25%;" class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"> </span>
+                          <input type="text"  name="Report"  class="form-control" placeholder="Reporting Manager" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div style="margin-left: 25%;" class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"> </span>
+                          <input type="text"  name="skills"  class="form-control" placeholder="Skills" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <button  style="margin-left: 60%;" type="submit" class="btn btn-outline-primary">Primary</button>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>    
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}
+
+

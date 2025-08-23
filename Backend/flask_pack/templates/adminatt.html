@@ -1,0 +1,34 @@
+{%extends "adminpanel.html"%}
+{% block content %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">date</th>
+        <th scope="col">Login Time </th>
+        <th scope="col">Logout Time</th>
+        <th scope="col">Hours worked(HH::MM::SS)</th>
+        <th scope="col">Total Hours :{{thrs}}</th>
+        <th scope="col"><button>
+          <form action="/export1" method="post">
+            <input type="hidden" name="res" value="{{res.date}}">
+            <input type="hidden" name="res1" value="{{res.login}}">
+            <input type="hidden" name="res2" value="{{res.logout}}">
+            <input type="hidden" name="res3" value="{{res.hrs}}">
+            <input type="submit" value="submit">
+          </form>
+        </button></th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        {% for index in range(res.date|length) %}
+        <tr>
+            <td>{{ res.date[index] }}</td>
+            <td>{{ res.login[index] }}</td>
+            <td>{{ res.logout[index] }}</td>
+            <td>{{ res.hrs[index] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
