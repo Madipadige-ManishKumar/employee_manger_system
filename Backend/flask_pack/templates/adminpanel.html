@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Frameset Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+     
+     <nav   class="navbar navbar-light bg-transparent">
+        <a class="navbar-brand" href="/">
+          <img  style="height: 50px; width: 300px; "  src="{{ url_for('static', filename = 'images/logo.png') }}" width="30" height="30"class="rounded-circle" alt="">
+        </a>
+ </nav>     
+ <div class="container" style="display: flex;">
+ <div class="leftframe" style="height: auto; width: 300px; border-style:groove; border-radius: 5px;">
+  <ul>
+  <li><a href="/adduser"> <h5>Add employee</h5></a></li>
+  <li><a href="/emphrs"> <h5>employee  working hours</h5></a></li>
+  <li><a href="/empdet"> <h5>employee details</h5></a></li>
+  <li><a href="/depthrs"> <h5> Department Working hours </h5></a></li>
+    <li><a href="/"><h5>Logout</h5></a></li>
+  </ul>
+  </div>
+ 
+ 
+    {% block content %}
+    {% endblock %}
+  
+</div>
+
+ 
+
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

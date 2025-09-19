@@ -1,0 +1,152 @@
+{%extends "layout.html"%}
+{% block content %}
+<div id="services">
+<table>
+<tr>
+  
+<td>
+<style>
+    body1{
+      box-sizing: border-box;
+      font-family: 'Poppins',sans-serif;
+  }
+  
+  .container1{      
+      width: 300px;
+      margin-left: 10%;
+      margin-bottom: 80%;
+      height: 30vh;
+      background-color:#fff;
+      color: #000;
+      display: flex;
+      justify-content: first baseline;
+  }
+  
+  .container1 h1{
+      font-size: 50px;
+      font-weight: 600;       
+  </style>
+  <div class="body1">
+    <a style="margin-left: 20%; font-size: 20px;" href="https://marvelgeospatial.com/pages/services/">learn more></a> 
+  <div class="container1">
+      <h1>  <div style="color: cyan;"> We provide </div>  <span class="auto-type" style="font-size: 30px;"></span></h1>  
+      
+  </div>
+  
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+      var typed =new Typed(".auto-type",{
+          strings:["Surveying","Photogrammetry","LiDAR Services ","GIS / CAD","Digital Twins","BIM" ],
+          typeSpeed:50,
+          backspeed:150,
+          loop:true
+      })
+  </script>
+  </td>
+  <td>
+    <div class="td1" style="width: 700px; height: 700px; margin-left: 300px;">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename = 'images/surveying.jpg') }}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Surveying</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename = 'images/Photogrammetry.jpg') }}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename = 'images/lidar.jpg') }}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename = 'images/GISCAD.jpg') }}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename = 'images/digitaltwins.jpg') }}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename = 'images/BIM.webp') }}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+   </td>
+  
+</tr>
+</table>
+
+</div>
+<br>
+<div id="loc" style="border-style: double; ">
+<h1>Location</h1>
+<img style="padding-left: 20%;"  src="{{ url_for('static', filename = 'images/location.png') }}" alt="">
+</div>
+
+
+<br>
+<br>
+
+
+
+
+
+<div id="aboutus" style="border-style:dashed;">
+    <legend> <h1>About Us</h1> </legend>
+ <b  style="font-size: 20px;">
+     Marvel Geospatial Solutions was established in 2008 with the goal of providing accurate geospatial solutions through innovation, bringing in new technologies from all over the world. Since its inception, Marvel Geospatial has been working towards advancing geospatial technology for development and helping organizations maximize the value of their data.
+ Marvel Geospatial aims to serve the needs of national and global markets through focused, innovative, and efficient quality products and services in all areas of geospatial technology and applications. Founded in Hyderabad, India, the company now serves organizations across the world through its local offices in various regions.
+ 
+ We are home to a dedicated and immensely skilled crew of geospatial professionals. Our team is known for its vast experience and technical  <br> expertise in various functions, including GIS/CAD, photogrammetry, drone data acquisition and processing, LiDAR (satellite/aerial, UAV, mobile), data processing, and analytics.
+ 
+ As geospatial technology grows to become a transformational force for economies and societies in the digital era, we keep ourselves at the forefront of tech evolution to best serve our stakeholders.
+ 
+ We support critical decision making by governments, business enterprises, academia, and non-governmental organizations with reliable, fast, and high-quality geospatial information through our services, custom solutions, and products.
+ 
+ 
+ </b>
+ 
+ </div>
+ 
+{% endblock %}
+<!-- 
+<img src="{{ url_for('static', filename = 'images/surveying.jpg') }}" class="card-img-top" alt="...">
+<h5 class="card-title">SURVEYING</h5>
+<p class="card-text">Surveying is the art of measuring land, the science of measuring the depths of the earth and the heights of the heavens.</p> -->
